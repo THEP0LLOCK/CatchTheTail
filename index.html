@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CatchTheTail</title>
+    <style>
+      #output {
+        color: white;
+        text-align: center; /* 텍스트 중앙 정렬 */
+      }
+      /* 폰트 적용 */
+      @import url("https://fonts.googleapis.com/earlyaccess/jejugothic.css");
+      .jm-font {
+        font-family: "Jeju Gothic", sans-serif;
+      }
+
+      /* 전체 배경을 검은색으로 변경 */
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 게임 컨테이너 스타일 변경 */
+      #game-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      /* 로그 스타일 변경 */
+      #output {
+        color: white; /* 텍스트 색상 변경 */
+      }
+
+      /* 입력창 스타일 변경 */
+      #input {
+        color: white; /* 텍스트 색상 변경 */
+        background-color: black; /* 배경색 검은색으로 변경 */
+        border: none;
+        border-bottom: 2px solid white; /* 밑줄 스타일 추가 */
+        padding: 8px;
+        width: 300px;
+        margin-bottom: 16px;
+        outline: none;
+      }
+
+      /* 입력 버튼 스타일 변경 */
+      button {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <!-- 메세지 로그 -->
+      <div id="output" class="jm-font"></div>
+      <!-- 입력창 -->
+      <input type="text" id="input" class="jm-font" placeholder="" />
+      <button id="input-button" class="jm-font">기억 시도</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
