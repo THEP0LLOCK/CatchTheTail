@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Credit]</title>
+    <style>
+      @import url("https://fonts.googleapis.com/earlyaccess/jejugothic.css");
+      .jm-font {
+        font-family: "Jeju Gothic", sans-serif;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #000;
+        overflow: hidden;
+        font-family: Arial, sans-serif; /* 변경할 폰트 설정 */
+      }
+
+      .falling-text-container {
+        position: relative;
+      }
+
+      .falling-text {
+        position: absolute;
+        font-size: 24px;
+        color: #fff;
+        opacity: 0; /* 초기에 숨겨짐 */
+        animation: fall 18s linear infinite;
+        /* 수정된 부분: 초기 위치 설정 */
+        top: -100px;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0; /* 애니메이션 시작 시 숨김 */
+        }
+        10%,
+        100% {
+          opacity: 1; /* 애니메이션 도중과 끝에서 보임 */
+        }
+        100% {
+          transform: translateY(100vh);
+          opacity: 0; /* 애니메이션 끝나면 숨김 */
+        }
+      }
+
+      .button-container {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .navigate-button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="falling-text-container">
+      <p class="jm-font falling-text">개발 : THEP0LLOCK</p>
+      <p class="jm-font falling-text" style="animation-delay: 4s">
+        스토리라인 : THEP0LLOCK
+      </p>
+      <p class="jm-font falling-text" style="animation-delay: 8s">
+        도움 : 박스즈메
+      </p>
+      <p class="jm-font falling-text" style="animation-delay: 12s">ㅇㅅㅇ</p>
+    </div>
+    <div class="button-container">
+      <button class="navigate-button" onclick="location.href='index.html'">
+        메뉴로 이동
+      </button>
+    </div>
+    <script>
+      // 이 공간은 현재 비어 있습니다.
+      // 추가적인 JavaScript 로직을 이곳에 작성할 수 있습니다.
+    </script>
+  </body>
+</html>
